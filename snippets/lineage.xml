@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="pe"
+           fetch="https://github.com/PixelExperience"
+           revision="refs/heads/twelve" />
+
+  <remote  name="pe-plus"
+           fetch="https://github.com/PixelExperience"
+           revision="refs/heads/twelve-plus" />
+
+  <remote  name="pe-gitlab"
+           fetch="https://gitlab.pixelexperience.org/android"
+           revision="refs/heads/twelve" /> 
+
   <!-- LineageOS additions -->
   <project path="android" name="android_manifest" remote="buxxed"/>
   <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
@@ -165,5 +177,9 @@
 
   <!-- Buxxed -->
   <project path="vendor/PixelLauncher" name="Ardjlon/vendor_PixelLauncher" revision="horus" />
+
+  <!-- PixelExperience -->
+  <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe" />
 
 </manifest>
