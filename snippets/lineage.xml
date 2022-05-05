@@ -176,7 +176,7 @@
   <project path="lineage/scripts" name="LineageOS/scripts" groups="tools" revision="master" />
 
   <!-- Buxxed -->
-  <project path="vendor/PixelLauncher" name="Ardjlon/vendor_PixelLauncher" revision="horus" />
+  <project path="vendor/PixelLauncher" name="vendor_PixelLauncher" remote="buxxed" />
 
   <!-- PixelExperience -->
   <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab" />
