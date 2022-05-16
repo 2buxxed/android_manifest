@@ -13,6 +13,9 @@
            fetch="https://gitlab.pixelexperience.org/android"
            revision="refs/heads/twelve" /> 
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
   <!-- LineageOS additions -->
   <project path="android" name="android_manifest" remote="buxxed"/>
   <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
@@ -176,6 +179,7 @@
 
   <!-- Buxxed -->
   <project path="vendor/PixelLauncher" name="vendor_PixelLauncher" remote="buxxed" />
+  <project path="vendor/gms" name="Project-Awaken/android_vendor_gms" remote="gitlab" revision="12.1" clone-depth="1" />
 
   <!-- PixelExperience -->
   <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab" />
